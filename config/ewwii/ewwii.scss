@@ -1,0 +1,138 @@
+$background-color: #273043;
+$background-color-light: #9197AE;
+$crimson: #F02D3A;
+
+// remove all gtk theme css
+* {
+  all: unset;
+}
+
+// == Top bar styles == //
+.top-bar {
+  border-radius: 10px;
+  background: transparent;
+  padding: 10px;
+}
+
+// == Left side == //
+.workspace {
+  background: $background-color;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.workspace button:hover {
+  color: $crimson;
+}
+
+.sidebar-revealer {
+  background: $background-color;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 14px;
+  color: #ffffff;
+
+  &:hover {
+    color: darken(#ffffff, 15%);
+  }
+}
+
+// == Right side == //
+.wifi-wdgt {
+  background-color: $background-color;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.time-wdgt {
+  background-color: $background-color;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.power-wdgt {
+  background-color: $background-color;
+  color: $crimson;
+  padding: 10px;
+  padding-right: 14px;
+  border-radius: 10px;
+
+  &:hover {
+    color: darken($crimson, 15%);
+  }
+}
+
+
+// == Powermenu styles == //
+.power-menu {
+  background: transparent;
+  padding: 10px;
+}
+
+.power-menu-content-box {
+  background: $background-color;
+  border-radius: 10px;
+}
+.power-menu button {
+  background: $background-color;
+  color: white;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  border: 0.5px solid $background-color-light;
+
+  &:hover {
+    color: $crimson;
+    border-color: $crimson;
+  }
+}
+
+.power-menu .shutdown-btn {
+  color: $crimson;
+  border: 1px solid $crimson;
+
+  &:hover {
+    background: $crimson;
+    color: black;
+  }
+}
+
+.bottom-dock {
+  border-radius: 10px;
+  border: 0.1px solid white;
+}
+
+// == sidebar styles == //
+.extra-sidebar {
+  background: transparent;
+  padding: 10px;
+}
+
+.sidebar-content-box {
+  background: $background-color;
+  border-radius: 10px;
+}
+
+.sidebar-text-box {
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  border: 0.5px solid $background-color-light;
+}
+
+.metric scale trough highlight {
+  background-color: $crimson;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.metric scale trough {
+  background-color: #4e4e4e;
+  border-radius: 50px;
+  min-height: 10px;
+  min-width: 80px;
+  margin: 5px;
+}
