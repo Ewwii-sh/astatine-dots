@@ -2,7 +2,7 @@ import "api::wifi" as wifi_api;
 import "std::env" as env;
 
 fn render(wsp_info, time) {
-    return centerbox(#{ orientation: "h" }, [
+    return box(#{ orientation: "h" }, [
         left(wsp_info),
         center(),
         right(time),
@@ -75,7 +75,7 @@ fn right(time) {
 
 // == POWER MENU == //
 fn render_power() {
-    return centerbox(#{
+    return box(#{
         orientation: "v",
         class: "power-menu-content-box"
     }, [
